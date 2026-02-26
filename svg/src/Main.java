@@ -13,6 +13,17 @@ public class Main {
         segment.p = point;
         segment.q = point2;
         System.out.println(segment.length());
+
+        Segment segments[] = new Segment[5];
+        float max = segments[0].length();
+        for (Segment s : segments){
+            if (max<s.length()){
+                max = s.length();
+            }
+        }
     }
+
+    public static float metod (Segment[], segments)
 }
+
 
