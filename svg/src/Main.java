@@ -3,7 +3,16 @@ public class Main {
         Point point = new Point();
         point.x = 5.4F;
         point.y = 2.3F;
-        System.out.println(point.toSvg());
+        point.translate(5.3F, 4.2F);
+        System.out.println(point);
+
+        Point point2 = point.translated(2.4F, 5.3F);
+        System.out.println(point2);
+
+        Segment segment = new Segment();
+        segment.p = point;
+        segment.q = point2;
+        System.out.println(segment.length());
     }
 }
 
